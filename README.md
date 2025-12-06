@@ -1,0 +1,2 @@
+# MNIST
+Simple Pytorch CNN
