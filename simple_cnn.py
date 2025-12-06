@@ -84,6 +84,8 @@ def train(model, train_loader, optimizer, epoch):
                 print(f'Epoch [{i + 1}/{epoch}], Step [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.4f}')
                 running_loss = 0.0
         if (i + 1) % 10 == 0:
+            if not os.path.exists('checkpoints'):
+                os.makedirs('checkpoints')
             torch.save(model.state_dict(), './checkpoints/model_{}.pth'.format(i))
             print('Model saved as model_{}.pth'.format(i))
 
@@ -130,3 +132,4 @@ def test(model, test_loader):
 
 
 test(model, test_loader)
+
