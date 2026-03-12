@@ -1,2 +1,2 @@
 # DeepLearning
-Simple DeepLearning model wirtten by Pytorch
+Simple DeepLearning models wirtten by Pytorch
