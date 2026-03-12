@@ -1,2 +1,2 @@
-# MNIST
-Simple Pytorch CNN
+# DeepLearning
+Simple DeepLearning model wirtten by Pytorch
